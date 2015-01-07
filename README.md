@@ -10,7 +10,8 @@ commas, colons, periods, etc.
 
 Operate on remote text objects using either `in`, `an`, `il`, or `al` operator
 mappings followed by the pair/separator to operate on.
-    - i.e. `dan<`, `cilb`, `=in{`, `yal|`
+
+- i.e. `dan<`, `cilb`, `=in{`, `yal|`
 
 Installation
 ------------
