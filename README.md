@@ -17,9 +17,9 @@ Installation
 ------------
 
 * [Pathogen][]
-    * `cd ~/.vim/bundle && git clone https://github.com/pgdouyon/vim-niffler.git`
+    * `cd ~/.vim/bundle && git clone https://github.com/pgdouyon/vim-apparate.git`
 * [Vim-Plug][]
-    * `Plug 'pgdouyon/vim-niffler'`
+    * `Plug 'pgdouyon/vim-apparate'`
 * Manual Install
     * Copy all the files into the appropriate directory under `~/.vim` on \*nix or
       `$HOME/_vimfiles` on Windows
