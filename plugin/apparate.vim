@@ -71,7 +71,7 @@ endfunction
 " ======================================================================
 " Plugin Mappings
 " ======================================================================
-for pair in ["b","B","r","a","(","{","[","<","t","'", "`", '"']
+for pair in ["b","B","r","a","(","{","[","<","t", "`", '"']
     execute printf("onoremap <silent> in%s :<C-U>call <SID>ApparatePairs('i','n','%s')<CR>", pair, pair)
     execute printf("onoremap <silent> il%s :<C-U>call <SID>ApparatePairs('i','l','%s')<CR>", pair, pair)
     execute printf("onoremap <silent> an%s :<C-U>call <SID>ApparatePairs('a','n','%s')<CR>", pair, pair)
@@ -89,6 +89,11 @@ for sep in [",", ".", ";", ":", "+", "-", "=", "~", "_", "*", "#", "/", "&", "$"
     execute printf("onoremap <silent> an%s :<C-U>call <SID>ApparateSeparatorsNL('a', 'n', '%s')<CR>", sep, sep)
     execute printf("onoremap <silent> al%s :<C-U>call <SID>ApparateSeparatorsNL('a', 'l', '%s')<CR>", sep, sep)
 endfor
+
+onoremap <silent> in' :<C-U>call <SID>ApparatePairs('i', 'n', "'")<CR>
+onoremap <silent> il' :<C-U>call <SID>ApparatePairs('i', 'l', "'")<CR>
+onoremap <silent> an' :<C-U>call <SID>ApparatePairs('a', 'n', "'")<CR>
+onoremap <silent> al' :<C-U>call <SID>ApparatePairs('a', 'l', "'")<CR>
 
 onoremap <silent> i\| :<C-U>call <SID>ApparateSeparators("i", "\|")<CR>
 onoremap <silent> a\| :<C-U>call <SID>ApparateSeparators("a", "\|")<CR>
