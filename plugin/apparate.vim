@@ -78,12 +78,12 @@ for pair in ["b","B","r","a","(","{","[","<","t","'", "`", '"']
     execute printf("onoremap <silent> al%s :<C-U>call <SID>ApparatePairs('a','l','%s')<CR>", pair, pair)
 endfor
 
-for sep in [",", ".", ";", ":", "+", "-", "~", "_", "*", "/", "&", "$"]
+for sep in [",", ".", ";", ":", "+", "-", "=", "~", "_", "*", "#", "/", "&", "$"]
     execute printf("onoremap <silent> i%s :<C-U>call <SID>ApparateSeparators('i', '%s')<CR>", sep, sep)
     execute printf("onoremap <silent> a%s :<C-U>call <SID>ApparateSeparators('a', '%s')<CR>", sep, sep)
 endfor
 
-for sep in [",", ".", ";", ":", "+", "-", "~", "_", "*", "/", "&", "$"]
+for sep in [",", ".", ";", ":", "+", "-", "=", "~", "_", "*", "#", "/", "&", "$"]
     execute printf("onoremap <silent> in%s :<C-U>call <SID>ApparateSeparatorsNL('i', 'n', '%s')<CR>", sep, sep)
     execute printf("onoremap <silent> il%s :<C-U>call <SID>ApparateSeparatorsNL('i', 'l', '%s')<CR>", sep, sep)
     execute printf("onoremap <silent> an%s :<C-U>call <SID>ApparateSeparatorsNL('a', 'n', '%s')<CR>", sep, sep)
