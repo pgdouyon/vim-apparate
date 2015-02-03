@@ -135,6 +135,16 @@ xnoremap <silent> an\ :<C-U>call <SID>ApparateSeparatorsNL('a', 'n', '\\')<CR>
 xnoremap <silent> il\ :<C-U>call <SID>ApparateSeparatorsNL('i', 'l', '\\')<CR>
 xnoremap <silent> al\ :<C-U>call <SID>ApparateSeparatorsNL('a', 'l', '\\')<CR>
 
+onoremap <silent> ia i<
+onoremap <silent> aa a<
+xnoremap <silent> ia i<
+xnoremap <silent> aa a<
+
+onoremap <silent> ir i[
+onoremap <silent> ar a[
+xnoremap <silent> ir i[
+xnoremap <silent> ar a[
+
 
 let &cpoptions = s:save_cpo
 unlet s:save_cpo
